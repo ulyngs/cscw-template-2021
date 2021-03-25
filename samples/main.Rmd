@@ -1,0 +1,19 @@
+---
+output:
+    bookdown::pdf_document2:
+        template: sample-acmsmall.tex
+        citation_package: natbib
+bibliography: references.bib
+---
+
+# Awesome heading
+
+
+```{r, echo=FALSE, out.width='0.98\\columnwidth'}
+plot(pressure)
+```
+
+
+Claudine is **great**!
+
+Cite something [@aguinis2019]
