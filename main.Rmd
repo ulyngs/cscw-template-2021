@@ -8,12 +8,22 @@ bibliography: references.bib
 
 # Awesome heading
 
-
-```{r, echo=FALSE, out.width='0.98\\columnwidth'}
+```{r claudine-plot, echo=FALSE, out.width='0.98\\columnwidth', fig.cap="Claudine's greatness as a function of COVID vaccine distribution"}
 plot(pressure)
 ```
 
+Figure \@ref(fig:claudine-plot) shows that Claudine is **great**!
 
-Claudine is **great**!
+## Imagine I'm reporting tabular data
+As we can clearly see from Table \@ref(tab:ulrik-table), Ulrik is also pretty **great**!
+
+```{r ulrik-table, echo=FALSE}
+some_table <- head(iris)
+
+knitr::kable(some_table, booktabs = TRUE, caption = "Numbers that show Ulrik's greatness by virtue of lengths and widths of some plants.")
+```
+
+
+
 
 Cite something [@aguinis2019]
